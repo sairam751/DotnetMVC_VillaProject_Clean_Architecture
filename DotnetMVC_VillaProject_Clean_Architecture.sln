@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetMVC_VillaProject_Clean_Architecture", "DotnetMVC_VillaProject_Clean_Architecture\DotnetMVC_VillaProject_Clean_Architecture.csproj", "{2EC746C0-0CC3-411A-81B1-45D04AA425C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotnetMVC_VillaProject_Clean_Architecture", "DotnetMVC_VillaProject_Clean_Architecture\DotnetMVC_VillaProject_Clean_Architecture.csproj", "{2EC746C0-0CC3-411A-81B1-45D04AA425C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Villa.Domain", "Villa.Domain\Villa.Domain.csproj", "{443E2199-C2DE-4646-88F1-895CF7323E3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Villa.Application", "Villa.Application\Villa.Application.csproj", "{EC653B26-97ED-4D8F-A887-475EEDAFB186}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Villa.Infrastructure", "Villa.Infrastructure\Villa.Infrastructure.csproj", "{56E507B3-5288-4322-998D-029028CFF648}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{2EC746C0-0CC3-411A-81B1-45D04AA425C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EC746C0-0CC3-411A-81B1-45D04AA425C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EC746C0-0CC3-411A-81B1-45D04AA425C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{443E2199-C2DE-4646-88F1-895CF7323E3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{443E2199-C2DE-4646-88F1-895CF7323E3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{443E2199-C2DE-4646-88F1-895CF7323E3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{443E2199-C2DE-4646-88F1-895CF7323E3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC653B26-97ED-4D8F-A887-475EEDAFB186}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC653B26-97ED-4D8F-A887-475EEDAFB186}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC653B26-97ED-4D8F-A887-475EEDAFB186}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC653B26-97ED-4D8F-A887-475EEDAFB186}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56E507B3-5288-4322-998D-029028CFF648}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56E507B3-5288-4322-998D-029028CFF648}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56E507B3-5288-4322-998D-029028CFF648}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56E507B3-5288-4322-998D-029028CFF648}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
