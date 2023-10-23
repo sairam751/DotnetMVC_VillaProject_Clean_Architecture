@@ -37,5 +37,52 @@ namespace DotnetMVC_VillaProject_Clean_Architecture.Controllers
             return View();
 
         }
+        public IActionResult Update(int villaId)
+        {
+            VillaTable obj=_db.Villas.FirstOrDefault(u=>u.Id==villaId);
+            if(obj== null)
+            {
+                return RedirectToAction("Error", "Home");
+            }
+            return View(obj);
+        }
+        [HttpPost]
+        public IActionResult Update(VillaTable obj)
+        {
+            if (ModelState.IsValid && obj.Id > 0)
+            {
+
+                _db.Update(obj);
+                _db.SaveChanges();
+               TempData["success"] = "The villa has been updated successfully.";
+                return RedirectToAction(nameof(Index));
+            }
+            return View();
+        }
+        public IActionResult Delete(int villaId)
+        {
+            VillaTable? obj = _db.Villas.FirstOrDefault(u => u.Id == villaId);
+            if(obj is null)
+            {
+                return RedirectToAction("Error", "Home");
+            }
+            return View(obj);
+        }
+        [HttpPost]
+        public IActionResult Delete(VillaTable obj)
+        {
+            VillaTable? objFromDb = _db.Villas.FirstOrDefault(u=>u.Id==obj.Id);
+            if (objFromDb is not null)
+            {
+                _db.Villas.Remove(objFromDb);   
+                _db.SaveChanges();
+                TempData["success"] = "The villa has been Deleted successfully.";
+                return RedirectToAction("Index");
+            }
+            TempData["error"] = "The villa could not be deleted.";
+            return View();
+        }
+
+
     }
 }
